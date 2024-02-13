@@ -15,6 +15,7 @@ As the website can not give any margin or padding by default. */
   background-size: cover;
   background-position: bottom center;
   height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 47% 100%, 46% 100%, 0 77%);
 
   /* if we want to take the entire screen we have to write 100vh. 100 vh covers the whole screen as height */
 }
@@ -29,18 +30,20 @@ As the website can not give any margin or padding by default. */
   word-spacing: 40px;
 }
 
-.article {
+.article,
+#cow-type {
   width: 80%;
   margin: 60px auto;
   background-color: aqua;
   border: 15px yellow solid;
   padding: 60px;
+  background: linear-gradient(pink, rgb(85, 110, 177));
 }
 
-.article h2 {
+.article h2,
+#cow-type h2 {
   text-align: center;
   font-size: 48px;
-  border-bottom: 2px yellow solid;
   padding-bottom: 30px;
 }
 
@@ -59,7 +62,15 @@ As the website can not give any margin or padding by default. */
   width: 600px;
 }
 
-/* h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 200;
-} */
+.cow-images {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.cow-images div {
+  width: 300px;
+}
+.cow-images img {
+  width: 100%;
+}
