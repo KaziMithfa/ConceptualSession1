@@ -1,3 +1,65 @@
-h2 {
-  color: red;
+/* at first we have to write the margin and padding 0.
+As the website can not give any margin or padding by default. */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
+
+.hero {
+  background-image: url("../images/cow.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+
+  /* if we want to take the entire screen we have to write 100vh. 100 vh covers the whole screen as height */
+}
+
+.hero h1 {
+  color: azure;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  padding-top: 60px;
+  font-family: cursive;
+  word-spacing: 40px;
+}
+
+.article {
+  width: 80%;
+  margin: 60px auto;
+  background-color: aqua;
+  border: 15px yellow solid;
+  padding: 60px;
+}
+
+.article h2 {
+  text-align: center;
+  font-size: 48px;
+  border-bottom: 2px yellow solid;
+  padding-bottom: 30px;
+}
+
+.article p {
+  font-size: 28px;
+}
+
+.article p .imp {
+  /* em means it will be double of your parent size. */
+
+  font-size: 2em;
+  background-color: yellow;
+  /* line height 2em means take double line space than it text size */
+  display: inline-block;
+  line-height: 2em;
+  width: 600px;
+}
+
+/* h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+} */
